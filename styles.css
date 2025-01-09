@@ -97,7 +97,7 @@
     }
 
     .logo img{
-        width: 90px;
+        width: 140px;
         height: 74px;
     }
 
@@ -411,7 +411,7 @@
     }
 
     .contact-info li i {
-        color: var(--accent-color);
+        color: #ff8a34;
     }
 
     .newsletter-form {
@@ -423,7 +423,7 @@
     .newsletter-form input {
         flex: 1;
         padding: 0.8rem;
-        border: none;
+        border: 1px solid gray;
         border-radius: 25px;
         background: rgba(255,255,255,0.1);
         color: #fff;
@@ -1323,6 +1323,14 @@
         }
 
         nav ul li a {
+            display: flex; /* Flexbox for icon and text alignment */
+            flex-direction: column; /* Stack icon and text vertically */
+            align-items: center; /* Center-align icon and text */
+            justify-content: center; /* Vertically center icon and text */
+            text-decoration: none; /* Remove underline */
+            color: #333; /* Text color */
+            font-size: 0.9rem; /* Text size */
+            gap: 0.5rem; /* Space between icon and text */
             font-size: 0.8rem;
             padding: 0.4rem;
         }
@@ -1491,11 +1499,11 @@
     }
 
     .footer-section h4 {
-        color: var(--accent-color);
+        color:  #46423ded;
     }
 
     .footer-section p {
-        color: var(--secondary-color);
+        color: #424545;
     }
 
     .social-links a {
@@ -1504,15 +1512,15 @@
     }
 
     .footer-section ul li a {
-        color: var(--secondary-color);
+        color: #424545;
     }
 
     .footer-section ul li a:hover {
-        color: var(--accent-color);
+        color: var(--error-color);
     }
 
     .contact-info li {
-        color: var(--secondary-color);
+        color: #424545
     }
 
     .newsletter-form input {
@@ -1571,7 +1579,8 @@
         color: var(--primary-color);
     }
     .lowerlogo img{
-        width: 111px;
+        width: 140px;
+        height: 80px;
     }
     /* Keep all other CSS rules the same */
 
@@ -1623,4 +1632,345 @@ main{
 .view-details-button {
     margin-top: auto; /* Pushes the button to the bottom of the card */
     text-align: center; /* Center the button's text */
+}
+.fvi{
+    width: 100px;
+    height: 100px;
+}
+:root {
+    --primary-color: #F89352;      /* Coral orange as primary */
+    --primary-dark: #D67B44;       /* Darker shade of coral */
+    --secondary-color: #838888;    /* Medium gray as secondary */
+    --accent-color: #E4989C;       /* Tony's pink as accent */
+    --text-primary: #333333;       /* Dark gray for primary text */
+    --text-secondary: #666666;     /* Medium gray for secondary text */
+    --background-light: #ffffff;   /* White background */
+    --background-off: #F8F7F6;     /* Slightly warm off-white */
+    --error-color: #ef4444;        /* Original error color */
+    --success-color: #10b981;      /* Original success color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Canva Sans', 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Canva Sans', 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo span:first-child {
+    color: var(--primary-color);
+}
+
+.logo span:last-child {
+    color: var(--secondary-color);
+}
+
+.logo img {
+    width: 140px;
+    height: 74px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    font-family: 'Canva Sans', 'Open Sans', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    margin-top: 80px;
+    padding: 2rem 5%;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-off);
+    color: var(--text-primary);
+}
+
+.home-product-header {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}
+
+.home-product-header h2 {
+    font-family: 'Canva Sans', 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 3rem 0;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.product-card .view-details {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.product-card .view-details:hover {
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    transform: scale(1.05);
+}
+
+.product-badge {
+    background: var(--accent-color);
+    color: white;
+}
+
+.hero-banner {
+    background: linear-gradient(rgb(235 181 122 / 28%), rgb(213 152 176 / 45%)),
+                url('https://images.unsplash.com/photo-1575032617751-6ddec2089882?q=80&w=2819&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-content h1 {
+    color: var(--background-light);
+    text-shadow: 2px 2px 4px rgba(248, 147, 82, 0.3);
+}
+
+.hero-content h2 {
+    color: var(--background-light);
+    text-shadow: 2px 2px 4px rgba(248, 147, 82, 0.3);
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: white;
+}
+
+.cta-button:hover {
+    background: lightgray;
+}
+
+footer {
+    background: #dedede;
+    color: var(--background-light);
+}
+
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.social-links a {
+    color: var(--background-light);
+    background: var(--primary-dark);
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+}
+
+.footer-section ul li a {
+    color: #424545;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(252, 181, 49)
+}
+
+.newsletter-form button {
+    background: var(--primary-color);
+    color: white;
+}
+
+.newsletter-form button:hover {
+    background: var(--accent-color);
+}
+
+.footer-bottom {
+    background: var(--primary-dark);
+    color: var(--background-light);
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+}
+
+/* Keeping all the responsive design and other utility classes the same */
+/* Adding all the remaining CSS from the original file that doesn't involve color changes */
+
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    color: var(--text-primary);
+    background-color: var(--background-off);
+}
+
+.lowerlogo img {
+    width: 140px;
+    height: 80px;
+}
+/* General Navigation Styling */
+.nav-menu {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center align icon and text horizontally */
+    justify-content: center; /* Center align icon and text vertically */
+    text-align: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+}
+
+.nav-item i {
+    font-size: 2rem; /* Adjust icon size */
+    color: #F89352; /* Adjust color for the icon */
+}
+
+.nav-item span {
+    font-size: 0.9rem; /* Adjust text size */
+    color: #838888; /* Adjust color for the text */
 }

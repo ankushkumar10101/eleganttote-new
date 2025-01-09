@@ -21,9 +21,9 @@
         },
         {
     "id": "2",
-  "name": "Trendy Brown Leather Handbag",
+  "name": "Trendy Mini Brown Leather Handbag",
   "price": 69.99,
-  "description": "Make a statement with this trendy brown leather handbag. Featuring a structured design, contrast stitching, and a dual-handle strap system with a bold striped shoulder strap, this handbag offers both style and functionality. Perfect for everyday use or adding a touch of sophistication to your look.",
+  "description": "Make a statement with this trendy brown leather handbag. Featuring a structured design, contrast stitching, and a dual-handle strap system with a bold striped shoulder strap, this handbag offers both style and functionality. Perfect for everyday use or adding a touch of sophistication to your look, which enhances your overall appearnce .",
   "image": "https://img.kwcdn.com/product/open/2024-09-08/1725759646342-c8c4260f564f4b158720305b38e25612-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
   "category": "Accessories",
   "badge": "New Arrival",
@@ -57,7 +57,7 @@
         },
         {     
     "id": "4",
-  "name": "Minimalist White Handbag with Striped Strap",
+  "name": "Minimalist White Handbag",
   "price": 69.99,
   "description": "Add a touch of elegance to your outfit with this minimalist white handbag. Designed with clean lines, subtle texture, and functional zippered compartments, it also features a bold striped shoulder strap for a modern twist. Ideal for everyday use or special outings.",
   "image": "https://img.kwcdn.com/product/open/8d18243fae75497989316d7f1b3d1cf3-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
@@ -75,7 +75,7 @@
         },
               {
                 "id": "5",
-                "name": "Unique Red Handbag",
+                "name": "Unique Elegantly Designed  Red Handbag  ",
                 "price": 79.99,
                 "description": "A brand-new product for testing.",
                 "image": "https://img.kwcdn.com/product/open/2024-09-08/1725759648570-194ae5ef6ccc4760ab6be076a36682ab-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
